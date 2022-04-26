@@ -41,7 +41,7 @@ public class CheckoutController {
     @RequestMapping(value = "/shop/checkout", method = RequestMethod.GET)
     public ModelAndView checkout() throws Exception {
         ModelAndView response = new ModelAndView();
-        response.setViewName("shop/checkout");
+        response.setViewName("cart/cart");
 
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication(); // ask spring security for current user
         String loggedUserEmail = authentication.getName(); // get current users email
